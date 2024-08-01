@@ -7,6 +7,8 @@ public class Store {
     }
 
     public static void listProducts(ProductForSale[] products) {
-
+      public void showDetails(){
+            System.out.println("it is fun");
+        }
     }
 }
