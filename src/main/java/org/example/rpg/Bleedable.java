@@ -1,5 +1,6 @@
 package org.example.rpg;
 
 public interface Bleedable {
-    static double bleed();
+ public double bleed();
+ public double bleed(int level);
 }

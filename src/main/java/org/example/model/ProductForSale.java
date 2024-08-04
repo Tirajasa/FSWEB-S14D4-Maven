@@ -23,8 +23,16 @@ public abstract class ProductForSale {
         return description;
     }
     public int getSalesPrice(int quantity){
-        return quantity*this.price;
+        return quantity*getPrice();
     }
     public abstract void showDetails();
 
+    @Override
+    public String toString() {
+        return "ProductForSale{" +
+                "type='" + type + '\'' +
+                ", price=" + price +
+                ", description='" + description + '\'' +
+                '}';
+    }
 }

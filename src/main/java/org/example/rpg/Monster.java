@@ -22,7 +22,5 @@ public abstract class Monster {
     public double getDamage() {
         return damage;
     }
-    public double attack(){
-        return  getDamage()+ Bleedable.bleed() + Poisonable.poison();
-    }
+    public abstract double attack();
 }
